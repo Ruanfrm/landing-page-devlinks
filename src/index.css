@@ -1,0 +1,81 @@
+* {
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: radial-gradient(circle at 50% 50%, #937bff 0, #1e4ef3 50%, #002ace 100%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.App-header img {
+  width: 70%;
+  margin-top: 2rem;
+  margin-left: 6rem;
+}
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 250px;
+  right: 0; 
+  top: 80px;
+}
+
+.phone img {
+  width: 80%;
+}
+
+.App-header  button  {
+  padding: 8px 10px;
+  background-color: transparent ;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  width: 200%;
+  border-radius: 50px;
+  border: 1px solid black;
+  /* margin-left: 6rem; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  
+}
+.App-header a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.App-header svg {
+    margin-right: 4px;
+}
+
+.App-header button:hover {
+  background-color: #E4E325;
+}
+
+@keyframes float{
+	0%,100%{
+		transform:translatey(0)
+	}
+	50%{
+		transform:translatey(-30px)
+	}
+}
+.efeito-flutuante-infinito {
+     animation: float 2s ease-in-out infinite;
+}
+
