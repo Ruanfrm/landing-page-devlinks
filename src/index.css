@@ -7,17 +7,23 @@
 body {
   font-family: sans-serif;
   background-image: radial-gradient(circle at 50% 50%, #937bff 0, #1e4ef3 50%, #002ace 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
   display: flex;
   align-items: center;
+  
 }
 
 .App-header img {
   width: 70%;
   margin-top: 2rem;
-  margin-left: 6rem;
+  margin-left: 1rem;
 }
 .App-header {
   display: flex;
@@ -29,10 +35,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  left: 250px;
-  right: 0; 
+  /* position: relative; */
+  /* left: 100px;
+  right: 0;  */
   top: 80px;
+  margin-top:80px ;
+  margin-left: 180px;
 }
 
 .phone img {
@@ -45,10 +53,9 @@ body {
   color: #000;
   font-weight: bold;
   font-size: 18px;
-  width: 200%;
+  width: 250%;
   border-radius: 50px;
   border: 1px solid black;
-  /* margin-left: 6rem; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,6 +65,9 @@ body {
 .App-header a {
   text-decoration: none;
   cursor: pointer;
+  display: flex;
+  margin: auto;
+  padding: auto;
 }
 .App-header svg {
     margin-right: 4px;
@@ -72,10 +82,51 @@ body {
 		transform:translatey(0)
 	}
 	50%{
-		transform:translatey(-30px)
+		transform:translatey(-15px)
 	}
 }
 .efeito-flutuante-infinito {
      animation: float 2s ease-in-out infinite;
 }
 
+.container-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+footer svg {
+  margin-right: 1rem;
+}
+
+
+
+/* responsividade */
+@media (max-width: 1000px){
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .phone {
+      display: flex;
+      justify-content: center;
+      margin-right: 7rem;
+      width: 100%;
+    }
+    /* .App-header button {
+      width: 200%;
+    } */
+    .App-header a {
+      width: 60%;
+      margin-top: 2rem;
+    }
+    .App-header img {
+      margin-top: auto;
+    }
+}
